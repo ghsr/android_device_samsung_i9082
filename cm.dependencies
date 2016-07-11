@@ -3,7 +3,7 @@
         "remote": "github",
         "repository": "ghsr/android_kernel_samsung_i9082",
         "target_path": "kernel/samsung/i9082",
-        "revision": "cm-13.0"
+        "revision": "cm-13.0 setns"
     },
     {
         "remote": "github",
