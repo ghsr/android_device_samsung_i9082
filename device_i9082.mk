@@ -31,6 +31,7 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     Gello \
     SamsungServiceMode \
+	SamsungDoze \
     Snap
 
 # Wi-Fi

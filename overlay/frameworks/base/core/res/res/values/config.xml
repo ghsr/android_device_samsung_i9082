@@ -247,4 +247,9 @@
 
     <!-- Disable IpReachability monitor -->
     <bool name="config_wifi_ipreachability_monitor">false</bool>
+
+     <!-- The sensor id of an "any motion" sensor used in auto-power save modes.
+         0 indicates this sensor is not available. 
+ 	 8 = Proximity Sensor -->
+    <integer name="config_autoPowerModeAnyMotionSensor">8</integer>
 </resources>
