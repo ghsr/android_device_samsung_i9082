@@ -102,7 +102,7 @@ TARGET_BOOTANIMATION_PRELOAD := true
 TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 
 # jemalloc causes a lot of random crash on free()
-MALLOC_IMPL := dlmalloc
+MALLOC_SVELTE := true
 
 # SELinux
 BOARD_SEPOLICY_DIRS += device/samsung/i9082/sepolicy
