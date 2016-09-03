@@ -30,13 +30,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     charger_res_images \
     Gello \
-    SamsungServiceMode \
-    SamsungDoze \
+    SamsungServiceMode \ 
     Snap
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
-    dhcpcd.conf \
     hostapd \
     wpa_supplicant \
     wpa_supplicant.conf
