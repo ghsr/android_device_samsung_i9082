@@ -40,5 +40,8 @@
 # SEC User Dump
 # /dev/sec_user_dump        0660   system     shell  
 
+# Permission for GPS
+/dev/ttyS3                0660   gps        system
+
 # SYSTEM Status
 /dev/block/mmcblk0p11        0660   system     root  
