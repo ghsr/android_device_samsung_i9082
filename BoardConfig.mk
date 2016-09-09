@@ -64,6 +64,9 @@ BOARD_HARDWARE_CLASS := hardware/samsung/cmhw/ device/samsung/i9082/cmhw/
 BOARD_RIL_CLASS := ../../../device/samsung/i9082/ril/
 BOARD_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
 
+# Some of our vendor libs have text relocations
+TARGET_NEEDS_PLATFORM_TEXTRELS := true
+
 # GPS
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/i9082/include
 
