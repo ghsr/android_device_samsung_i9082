@@ -10,3 +10,7 @@ allow init tmpfs:lnk_file create;
 
 # insmod
 allow init self:capability sys_module; # TODO: want sys_ptrace too
+allow init kernel:system module_request;
+
+# Allow restorecon
+allow init debugfs_trace_marker:file getattr;
