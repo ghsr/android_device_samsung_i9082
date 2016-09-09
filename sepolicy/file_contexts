@@ -49,6 +49,7 @@
 ###################################
 # Data files
 #
+/data/.cid.info                                 u:object_r:wifi_data_file:s0
 /data/.psm.info                                 u:object_r:wifi_data_file:s0
 /data/misc/radio(/.*)?                          u:object_r:ril_db_file:s0
 /data/system/yas.cfg                            u:object_r:geomagneticd_data_file:s0
@@ -68,6 +69,8 @@
 # efs files
 #
 /efs/bluetooth(/.*)?                            u:object_r:bluetooth_efs_file:s0
+/efs/bluetooth/bt_addr				u:object_r:bluetooth_efs_file:s0
+/efs/wifi/.mac.info				u:object_r:wifi_efs_file:s0
 
 ###################################
 # sysfs files
