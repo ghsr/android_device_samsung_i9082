@@ -1,0 +1,7 @@
+# audioserver
+allow audioserver mediaserver_service:service_manager find;
+allow audioserver tvserver:binder call;
+# Trying to allow lib_Samsung_Resampler.so, which has text relocations
+# Figure out a fix for that lib...
+allow audioserver self:process execmem;
+allow audioserver sysfs:file r_file_perms;
