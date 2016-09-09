@@ -15,3 +15,4 @@ type_transition system_server system_data_file:fifo_file gps_data_file ".gps.int
 
 # Wi-Fi
 allow system_server self:capability sys_module;
+allow system_server wifi_efs_file:file r_file_perms;
