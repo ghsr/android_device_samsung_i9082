@@ -388,7 +388,6 @@ public class SamsungBCMRIL extends RIL implements CommandsInterface {
             default:
                 // Rewind the Parcel
                 p.setDataPosition(dataPosition);
-
                 // Forward responses that we are not overriding to the super class
                 super.processUnsolicited(p, type);
                 return;
