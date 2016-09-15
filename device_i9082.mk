@@ -96,7 +96,7 @@ PRODUCT_COPY_FILES += \
     packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
 
 # System properties
-$(call inherit-product, device/samsung/i9082/system_prop.mk)
+$(call inherit-product, $(COMMON_PATH)/system_prop.mk)
 
 # Dalvik heap config
 $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
