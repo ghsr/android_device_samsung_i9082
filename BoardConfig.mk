@@ -45,7 +45,7 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 1073741824
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/samsung/i9082/rootdir/fstab.capri
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/fstab.capri
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun%d/file"
 TARGET_RECOVERY_PIXEL_FORMAT := ABGR_8888
 TARGET_RECOVERY_DENSITY := hdpi
@@ -61,21 +61,21 @@ BOARD_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS -DCAPRI_HWC -DREFBASE_JB_MR1_C
 BOARD_HARDWARE_CLASS := hardware/samsung/cmhw/ device/samsung/i9082/cmhw/
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/samsung/i9082/ril/
+BOARD_RIL_CLASS := ../../../$(COMMON_PATH)/ril/
 BOARD_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
 
 # Some of our vendor libs have text relocations
 TARGET_NEEDS_PLATFORM_TEXTRELS := true
 
 # GPS
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/i9082/include
+TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 BOARD_GLOBAL_CFLAGS += -DCOMPAT_SENSORS_M
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/i9082/bluetooth
-BOARD_CUSTOM_BT_CONFIG := device/samsung/i9082/bluetooth/libbt_vndcfg.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth
+BOARD_CUSTOM_BT_CONFIG := $(COMMON_PATH)/bluetooth/libbt_vndcfg.txt
 
 # Connectivity - Wi-Fi
 BOARD_HAVE_SAMSUNG_WIFI             := true
@@ -110,4 +110,4 @@ TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 MALLOC_SVELTE := true
 
 # SELinux
-BOARD_SEPOLICY_DIRS += device/samsung/i9082/sepolicy
+BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
