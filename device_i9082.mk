@@ -1,6 +1,9 @@
 # Get non-open-source parts
 $(call inherit-product, vendor/samsung/i9082/i9082-vendor.mk)
 
+# Include path
+COMMON_PATH := device/samsung/i9082
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
