@@ -24,13 +24,14 @@ import android.os.Message;
 import android.os.Parcel;
 import android.os.SystemProperties;
 import android.telephony.ModemActivityInfo;
-import android.telephony.Rlog;
-import com.android.internal.telephony.RILConstants;
-import java.util.Collections;
 import android.telephony.PhoneNumberUtils;
+import android.telephony.Rlog;
+
 import com.android.internal.telephony.uicc.IccUtils;
+import com.android.internal.telephony.RILConstants;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Custom RIL to handle unique behavior of BCM RIL
