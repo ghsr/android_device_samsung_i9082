@@ -9,7 +9,7 @@
         "remote": "github",
         "repository": "osas514/proprietary_vendor_samsung_i9082",
         "target_path": "vendor/samsung/i9082",
-        "revision": "cm-13.0"
+        "revision": "cm-14.0"
     },
     {
         "remote": "github",
